@@ -1,1 +1,11 @@
 <h1>DUCKS PAGE INDEX!!!</h1>
+
+<label>Create a Duck!</label>
+
+<form action="/ducks/store" method="POST">
+	{% csrf_token %}
+	<label> Name<input name="name" type="text"></label>
+	<label> Description<input name="description" type="text"></label>
+	<label> Age<input name="age" type="number"></label>
+	<button>Submit</button>
+</form>
